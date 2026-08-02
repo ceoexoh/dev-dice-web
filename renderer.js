@@ -19,23 +19,23 @@ const excuses = [
 const excuseText = document.getElementById('excuseText');
 const rollBtn = document.getElementById('rollBtn');
 const copyConfirmation = document.getElementById('copyConfirmation');
-const { clipboard } = require('electron');
 
 function generateExcuse() {
     const randomIndex = Math.floor(Math.random() * excuses.length);
     const excuse = excuses[randomIndex];
-    excuseText.textContent = `"${excuse}"`;
+    excuseText.textContent = '"' + excuse + '"';
     copyConfirmation.textContent = '';
 }
 
 function copyExcuse() {
     const text = excuseText.textContent;
     if (text && text !== "Click the button to generate an excuse...") {
-        clipboard.writeText(text);
-        copyConfirmation.textContent = '✅ Copied to clipboard!';
-        setTimeout(() => {
-            copyConfirmation.textContent = '';
-        }, 2000);
+        navigator.clipboard.writeText(text).then(function() {
+            copyConfirmation.textContent = '✅ Copied to clipboard!';
+            setTimeout(function() {
+                copyConfirmation.textContent = '';
+            }, 2000);
+        });
     }
 }
 
