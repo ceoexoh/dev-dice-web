@@ -1,0 +1,84 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+    user-select: none;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+}
+
+h1 {
+    color: #58a6ff;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #8b949e;
+    margin-bottom: 30px;
+}
+
+.excuse-box {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 20px;
+    min-height: 60px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+.excuse-box:hover {
+    border-color: #58a6ff;
+}
+
+#excuseText {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    color: #e6edf3;
+}
+
+button {
+    background-color: #238636;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #2ea043;
+}
+
+button:active {
+    background-color: #238636;
+}
+
+#copyConfirmation {
+    color: #58a6ff;
+    font-size: 12px;
+    margin-top: 10px;
+    height: 18px;
+}
+
+.hint {
+    font-size: 12px;
+    color: #484f58;
+    margin-top: 20px;
+}

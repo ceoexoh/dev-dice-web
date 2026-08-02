@@ -1,0 +1,27 @@
+{
+  "name": "dev-dice",
+  "version": "1.0.0",
+  "description": "The ultimate developer excuse generator",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.exoh.dev-dice",
+    "productName": "DevDice",
+    "win": {
+      "target": "portable"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  },
+  "devDependencies": {
+    "electron": "^latest",
+    "electron-builder": "^latest"
+  }
+}
