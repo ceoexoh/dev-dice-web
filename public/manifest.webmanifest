@@ -1,0 +1,33 @@
+{
+  "name": "Scepter Christian Centre",
+  "short_name": "Scepter",
+  "description": "A family that loves — sermons, events, giving, media and community in one beautiful church app.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0b1636",
+  "theme_color": "#0b1636",
+  "orientation": "portrait-primary",
+  "id": "/",
+  "categories": ["religion", "lifestyle"],
+  "icons": [
+    {
+      "src": "/icons/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/maskable-icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable any"
+    }
+  ]
+}
